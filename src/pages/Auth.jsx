@@ -221,7 +221,7 @@ export default function Auth() {
               onClick={() => setIsLogin(false)}
               className={`flex-1 py-4 rounded-2xl font-bold transition duration-300
 
-              ${!isLogin ? "bg-cyan-500 text-black" : "text-gray-400"}`}
+              ${!isLogin ? "bg-primary-dark text-white" : "text-gray-400"}`}
             >
               Sign Up
             </button>
@@ -230,7 +230,7 @@ export default function Auth() {
               onClick={() => setIsLogin(true)}
               className={`flex-1 py-4 rounded-2xl font-bold transition duration-300
 
-              ${isLogin ? "bg-cyan-500 text-black" : "text-gray-400"}`}
+              ${isLogin ? "bg-primary-dark text-white" : "text-gray-400"}`}
             >
               Login
             </button>
@@ -255,7 +255,7 @@ export default function Auth() {
                 placeholder="Full Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 focus:border-cyan-400 outline-none px-6 py-5 rounded-2xl"
+                className="w-full bg-white/5 border border-white/10 focus:border-primary outline-none px-6 py-5 rounded-2xl"
               />
             )}
 
@@ -264,7 +264,7 @@ export default function Auth() {
               placeholder="Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 focus:border-cyan-400 outline-none px-6 py-5 rounded-2xl"
+              className="w-full bg-white/5 border border-white/10 focus:border-primary outline-none px-6 py-5 rounded-2xl"
             />
 
             <div className="relative">
@@ -273,7 +273,7 @@ export default function Auth() {
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 focus:border-cyan-400 outline-none px-6 py-5 pr-14 rounded-2xl"
+                className="w-full bg-white/5 border border-white/10 focus:border-primary outline-none px-6 py-5 pr-14 rounded-2xl"
               />
 
               <button
@@ -301,7 +301,7 @@ export default function Auth() {
 
             <button
               onClick={isLogin ? login : signup}
-              className="w-full bg-gradient-to-r from-primary-light to-secondary hover:scale-[1.02] text-black py-5 rounded-2xl font-black text-lg transition duration-300"
+              className="w-full bg-gradient-to-r from-primary-light to-secondary hover:scale-[1.02] text-white py-5 rounded-2xl font-black text-lg transition duration-300"
             >
               {loading
                 ? "Please wait..."
@@ -324,7 +324,7 @@ export default function Auth() {
 
             <button
               onClick={googleAuth}
-              className="w-full bg-white text-black py-5 rounded-2xl font-bold hover:scale-[1.02] transition duration-300"
+              className="w-full bg-white text-white py-5 rounded-2xl font-bold hover:scale-[1.02] transition duration-300"
             >
               Continue with Google
             </button>

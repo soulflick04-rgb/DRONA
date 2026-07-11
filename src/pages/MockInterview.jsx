@@ -272,8 +272,8 @@ ${answer}
 
             ${
               role === item
-                ? "bg-cyan-400 text-black border-cyan-300 scale-105 shadow-lg shadow-primary/30"
-                : "bg-white/5 border-white/10 hover:border-cyan-400 hover:bg-primary/10"
+                ? "bg-primary text-white border-primary-light scale-105 shadow-lg shadow-primary/30"
+                : "bg-white/5 border-white/10 hover:border-primary hover:bg-primary/10"
             }
           `}
                 >
@@ -307,7 +307,7 @@ ${answer}
 
             ${
               role === item
-                ? "bg-purple-400 text-black border-purple-300 scale-105 shadow-lg shadow-purple-500/30"
+                ? "bg-purple-400 text-white border-purple-300 scale-105 shadow-lg shadow-purple-500/30"
                 : "bg-white/5 border-white/10 hover:border-purple-400 hover:bg-purple-500/10"
             }
           `}
@@ -344,7 +344,7 @@ ${answer}
 
             ${
               role === item
-                ? "bg-green-400 text-black border-green-300 scale-105 shadow-lg shadow-green-500/30"
+                ? "bg-green-400 text-white border-green-300 scale-105 shadow-lg shadow-green-500/30"
                 : "bg-white/5 border-white/10 hover:border-green-400 hover:bg-green-500/10"
             }
           `}
@@ -371,8 +371,8 @@ ${answer}
 
           ${
             difficulty === item
-              ? "bg-cyan-400 text-black border-cyan-300 scale-105"
-              : "bg-white/5 border-white/10 hover:border-cyan-400"
+              ? "bg-primary text-white border-primary-light scale-105"
+              : "bg-white/5 border-white/10 hover:border-primary"
           }
         `}
               >
@@ -396,7 +396,7 @@ ${answer}
 
           ${
             interviewType === item
-              ? "bg-cyan-400 text-black border-cyan-300"
+              ? "bg-primary text-white border-primary-light"
               : "bg-white/5 border-white/10"
           }
         `}
@@ -427,7 +427,7 @@ ${answer}
 
           ${
             totalQuestions === count
-              ? "bg-cyan-400 text-black"
+              ? "bg-primary text-white"
               : "bg-white/5 border-white/10"
           }
         `}
@@ -496,7 +496,7 @@ ${answer}
       <div className="mb-10">
         <button
           onClick={startInterview}
-          className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-primary/40"
+          className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-white font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-primary/40"
         >
           {loading ? "Generating..." : "Start Interview"}
         </button>
@@ -508,7 +508,7 @@ ${answer}
         <>
           <div className="w-full bg-white/10 rounded-full h-3 mb-6">
             <div
-              className="bg-cyan-400 h-3 rounded-full transition-all duration-500"
+              className="bg-primary h-3 rounded-full transition-all duration-500"
               style={{
                 width: `${Math.min((questionNumber / 10) * 100, 100)}%`,
               }}
@@ -588,7 +588,7 @@ ${answer}
 
             <button
               onClick={analyzeAnswer}
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-primary/40"
+              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-white font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-primary/40"
             >
               {loading ? "Analyzing..." : "Analyze Answer"}
             </button>
@@ -612,7 +612,7 @@ ${answer}
 
   }}
 
-  className="px-8 py-4 rounded-2xl bg-gradient-to-r from-green-400 to-emerald-500 text-black font-bold text-lg hover:scale-105 transition-all"
+  className="px-8 py-4 rounded-2xl bg-gradient-to-r from-green-400 to-emerald-500 text-white font-bold text-lg hover:scale-105 transition-all"
 >
   ➡️ Next Question
 </button>

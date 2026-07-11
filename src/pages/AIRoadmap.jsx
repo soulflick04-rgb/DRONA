@@ -284,7 +284,7 @@ try {
 
       <button
         onClick={generateRoadmap}
-        className="bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-2xl transition duration-300"
+        className="bg-primary-dark hover:bg-primary text-white font-bold px-8 py-4 rounded-2xl transition duration-300"
       >
         Generate Roadmap
       </button>

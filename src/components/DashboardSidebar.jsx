@@ -127,7 +127,7 @@ export default function DashboardSidebar() {
               ${
                 location.pathname === item.path
 
-                  ? "bg-cyan-500 text-black shadow-xl shadow-primary/20"
+                  ? "bg-primary-dark text-white shadow-xl shadow-primary/20"
 
                   : "bg-white/5 border border-white/5 hover:border-primary/20 hover:bg-primary/10 text-white"
               }`}

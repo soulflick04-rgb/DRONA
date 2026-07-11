@@ -3,7 +3,7 @@ export default function ResumeAnalysisResult({ analysis }) {
     <div className="space-y-8 mt-10">
 
       {/* HERO */}
-      <div className="bg-gradient-to-r from-primary/20 to-secondary/20 p-8 rounded-3xl border border-cyan-500/30">
+      <div className="bg-gradient-to-r from-primary/20 to-secondary/20 p-8 rounded-3xl border border-primary-dark/30">
 
         <h1 className="text-4xl font-black mb-4">
           📄 Resume Analysis Report

@@ -199,7 +199,7 @@ Generate the tasks now.
         <div className="flex flex-col md:flex-row gap-4">
           {/* XP */}
 
-          <div className="bg-gradient-to-r from-primary-light to-secondary text-black px-6 py-3 rounded-2xl font-black text-xl shadow-lg">
+          <div className="bg-gradient-to-r from-primary-light to-secondary text-white px-6 py-3 rounded-2xl font-black text-xl shadow-lg">
             ⚡ {xp} XP
           </div>
 
@@ -211,7 +211,7 @@ Generate the tasks now.
 
           {/* Badge */}
 
-          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-3 rounded-2xl font-black text-xl shadow-lg">
+          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-2xl font-black text-xl shadow-lg">
             {getBadge()}
           </div>
         </div>
@@ -244,7 +244,7 @@ Generate the tasks now.
                 className={`px-6 py-3 rounded-2xl font-bold transition-all ${
                   task.completed
                     ? "bg-green-500 text-white"
-                    : "bg-gradient-to-r from-primary-light to-secondary text-black hover:scale-105"
+                    : "bg-gradient-to-r from-primary-light to-secondary text-white hover:scale-105"
                 }`}
               >
                 {task.completed ? "✅ Completed" : `+${task.xp} XP`}

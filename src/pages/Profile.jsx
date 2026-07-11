@@ -112,7 +112,7 @@ setStreak(
 
         {/* XP */}
 
-        <div className="bg-gradient-to-r from-primary-light to-secondary text-black rounded-3xl p-8 shadow-lg">
+        <div className="bg-gradient-to-r from-primary-light to-secondary text-white rounded-3xl p-8 shadow-lg">
 
           <h2 className="text-5xl font-black">
 
@@ -148,7 +148,7 @@ setStreak(
 
         {/* Badge */}
 
-        <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black rounded-3xl p-8 shadow-lg">
+        <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-3xl p-8 shadow-lg">
 
           <h2 className="text-3xl font-black">
 

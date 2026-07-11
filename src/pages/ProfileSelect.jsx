@@ -53,7 +53,7 @@ export default function ProfileSelect() {
           {profiles.map((profile, index) => (
             <div
               key={index}
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-400/40 hover:-translate-y-2 transition duration-300"
+              className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-primary/40 hover:-translate-y-2 transition duration-300"
             >
               <div className="text-6xl mb-6">{profile.emoji}</div>
 
@@ -67,7 +67,7 @@ export default function ProfileSelect() {
 
               <button
                 onClick={() => handleSelect(profile.type)}
-                className="w-full bg-cyan-500 hover:bg-cyan-400 text-black py-4 rounded-2xl font-black transition duration-300"
+                className="w-full bg-primary-dark hover:bg-primary text-white py-4 rounded-2xl font-black transition duration-300"
               >
                 Continue
               </button>

@@ -107,7 +107,7 @@ Keep answers short and practical.
         onClick={() =>
           setOpen(!open)
         }
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-cyan-400 text-black text-3xl shadow-2xl hover:scale-110 transition-all"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-primary text-white text-3xl shadow-2xl hover:scale-110 transition-all"
       >
         🤖
       </button>
@@ -127,7 +127,7 @@ Keep answers short and practical.
 
           {/* Header */}
 
-          <div className="bg-cyan-400 text-black font-black px-5 py-4 text-xl">
+          <div className="bg-primary text-white font-black px-5 py-4 text-xl">
 
             Drona AI 🚀
 
@@ -148,7 +148,7 @@ Keep answers short and practical.
                     item.role ===
                     "user"
 
-                      ? "bg-cyan-500 text-black ml-10"
+                      ? "bg-primary-dark text-white ml-10"
 
                       : "bg-white/10 text-white mr-10"
                   }`}
@@ -184,7 +184,7 @@ Keep answers short and practical.
 
             <button
               onClick={askAI}
-              className="bg-cyan-400 text-black px-5 rounded-2xl font-bold hover:scale-105 transition-all"
+              className="bg-primary text-white px-5 rounded-2xl font-bold hover:scale-105 transition-all"
             >
               Send
             </button>

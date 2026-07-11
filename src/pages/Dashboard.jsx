@@ -109,7 +109,7 @@ export default function Dashboard() {
         </div>
 
         <div className="space-y-4">
-          <button className="w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold shadow-xl shadow-primary/20">
+          <button className="w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-white font-bold shadow-xl shadow-primary/20">
             Dashboard
           </button>
           <Link
@@ -160,7 +160,7 @@ export default function Dashboard() {
           </button> */}
           <Link
             to="/"
-            className="block w-full text-center bg-primary/10 border border-primary/20 hover:bg-cyan-500 hover:text-black py-4 rounded-2xl font-bold transition duration-300"
+            className="block w-full text-center bg-primary/10 border border-primary/20 hover:bg-primary-dark hover:text-white py-4 rounded-2xl font-bold transition duration-300"
           >
             🏠 Back to Home
           </Link>
@@ -411,7 +411,7 @@ export default function Dashboard() {
 
               <button
                 onClick={() => (window.location.href = "/ai-roadmap")}
-                className="px-6 py-3 rounded-2xl bg-cyan-500 text-black font-bold hover:scale-105 transition-all"
+                className="px-6 py-3 rounded-2xl bg-primary-dark text-white font-bold hover:scale-105 transition-all"
               >
                 Generate Roadmap
               </button>
@@ -467,7 +467,7 @@ export default function Dashboard() {
               🗺️ Personalized Career Roadmap
             </h2>
 
-            <div className="bg-gradient-to-br from-white/5 to-cyan-500/5 border border-primary/20 rounded-3xl p-8">
+            <div className="bg-gradient-to-br from-white/5 to-primary-dark/5 border border-primary/20 rounded-3xl p-8">
               <div className="flex items-center justify-between mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-primary-light">
                   {interest} Roadmap 🚀
@@ -477,7 +477,7 @@ export default function Dashboard() {
                 {selectedRoadmap.map((step, index) => (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-3xl p-6 hover:border-primary/30 hover:bg-cyan-500/5 transition duration-300"
+                    className="bg-white/5 border border-white/10 rounded-3xl p-6 hover:border-primary/30 hover:bg-primary-dark/5 transition duration-300"
                   >
                     <div className="flex items-start gap-5">
                       <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary-light text-lg">
@@ -507,7 +507,7 @@ export default function Dashboard() {
                           <input
                             type="checkbox"
                             checked={completedSteps.includes(step.title)}
-                            className="w-7 h-7 accent-cyan-400 cursor-pointer"
+                            className="w-7 h-7 accent-primary cursor-pointer"
                             onChange={async () => {
                               let updatedSteps = [];
 

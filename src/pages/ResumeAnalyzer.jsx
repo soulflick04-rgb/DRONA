@@ -421,8 +421,8 @@ A strong resume should receive 75-95 ATS.
 
           ${
             selectedRole === role
-              ? "bg-cyan-500 text-black border-cyan-400 scale-105"
-              : "bg-white/5 border-white/10 hover:border-cyan-400 hover:bg-primary/10"
+              ? "bg-primary-dark text-white border-primary scale-105"
+              : "bg-white/5 border-white/10 hover:border-primary hover:bg-primary/10"
           }
         `}
       >
@@ -490,7 +490,7 @@ A strong resume should receive 75-95 ATS.
 
       <button
         onClick={analyzeResume}
-       className="mt-4 px-8 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg hover:scale-105 transition-all"
+       className="mt-4 px-8 py-4 rounded-2xl bg-primary text-white font-bold text-lg hover:scale-105 transition-all"
       >
         {loading ? "Analyzing..." : "Analyze Resume"}
       </button>
@@ -509,9 +509,9 @@ A strong resume should receive 75-95 ATS.
           </div>
 
           {/* Main Report Card */}
-          <div className="bg-gradient-to-br from-white/5 to-cyan-500/5 border border-primary/20 rounded-3xl p-8 shadow-2xl backdrop-blur-sm">
+          <div className="bg-gradient-to-br from-white/5 to-primary-dark/5 border border-primary/20 rounded-3xl p-8 shadow-2xl backdrop-blur-sm">
             {/* Decorative Top Bar */}
-            <div className="h-1 w-32 bg-cyan-400 rounded-full mb-8"></div>
+            <div className="h-1 w-32 bg-primary rounded-full mb-8"></div>
 
             <div
               className="
@@ -549,7 +549,7 @@ A strong resume should receive 75-95 ATS.
           prose-td:border
           prose-td:border-white/10
 
-          prose-blockquote:border-cyan-400
+          prose-blockquote:border-primary
           prose-blockquote:text-gray-300
         "
             >

@@ -106,7 +106,7 @@ export default function ExploreCareer() {
 
     navigate("/ai-chat");
   }}
-  className="mt-8 bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-2xl font-bold transition duration-300"
+  className="mt-8 bg-primary-dark hover:bg-primary text-white px-8 py-4 rounded-2xl font-bold transition duration-300"
 >
   🤖 Open Drona AI →
 </button>
@@ -117,7 +117,7 @@ export default function ExploreCareer() {
 
           <button
             onClick={() => navigate("/dashboard")}
-            className="flex-1 border border-white/20 hover:border-cyan-400 py-4 rounded-2xl font-bold transition duration-300"
+            className="flex-1 border border-white/20 hover:border-primary py-4 rounded-2xl font-bold transition duration-300"
           >
             🏠 Back to Dashboard
           </button>
@@ -141,7 +141,7 @@ export default function ExploreCareer() {
                 navigate("/dashboard");
               }
             }}
-            className="flex-1 bg-cyan-500 hover:bg-cyan-400 text-black py-4 rounded-2xl font-bold transition duration-300"
+            className="flex-1 bg-primary-dark hover:bg-primary text-white py-4 rounded-2xl font-bold transition duration-300"
           >
             🔄 Switch To This Journey
           </button>

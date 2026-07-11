@@ -108,7 +108,7 @@ export default function Leaderboard() {
             <div
               key={index}
 
-              className={`bg-gradient-to-r ${getRankColor(index)} rounded-3xl p-8 shadow-lg text-black`}
+              className={`bg-gradient-to-r ${getRankColor(index)} rounded-3xl p-8 shadow-lg text-white`}
             >
 
               <div className="text-6xl mb-4">
@@ -194,7 +194,7 @@ export default function Leaderboard() {
 
                 <div className="flex flex-wrap gap-4">
 
-                  <div className="bg-gradient-to-r from-primary-light to-secondary text-black px-5 py-3 rounded-2xl font-bold">
+                  <div className="bg-gradient-to-r from-primary-light to-secondary text-white px-5 py-3 rounded-2xl font-bold">
 
                     ⚡ {user.xp} XP
 

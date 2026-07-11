@@ -85,8 +85,8 @@ export default function TimeCommitment() {
 
               ${
                 selected === time
-                  ? "border-cyan-400 bg-primary/20 scale-105 shadow-lg shadow-primary/20"
-                  : "border-white/10 bg-white/5 hover:border-cyan-400 hover:bg-primary/10"
+                  ? "border-primary bg-primary/20 scale-105 shadow-lg shadow-primary/20"
+                  : "border-white/10 bg-white/5 hover:border-primary hover:bg-primary/10"
               }`}
             >
               <h2 className="text-2xl font-semibold">{time}</h2>
@@ -101,7 +101,7 @@ export default function TimeCommitment() {
 
           ${
             selected
-              ? "bg-cyan-500 hover:bg-cyan-400 text-black"
+              ? "bg-primary-dark hover:bg-primary text-white"
               : "bg-gray-700 text-gray-400 cursor-not-allowed"
           }`}
         >

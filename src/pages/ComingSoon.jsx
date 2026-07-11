@@ -21,7 +21,7 @@ export default function ComingSoon() {
 
         <button
           onClick={() => window.history.back()}
-          className="mt-8 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold"
+          className="mt-8 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-light to-secondary text-white font-bold"
         >
           ← Back
         </button>

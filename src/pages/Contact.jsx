@@ -191,7 +191,7 @@ export default function Contact() {
                   setName(e.target.value)
                 }
                 required
-                className="w-full bg-white/5 border border-white/10 focus:border-cyan-400 outline-none px-6 py-5 rounded-2xl"
+                className="w-full bg-white/5 border border-white/10 focus:border-primary outline-none px-6 py-5 rounded-2xl"
               />
 
               <input
@@ -202,7 +202,7 @@ export default function Contact() {
                   setEmail(e.target.value)
                 }
                 required
-                className="w-full bg-white/5 border border-white/10 focus:border-cyan-400 outline-none px-6 py-5 rounded-2xl"
+                className="w-full bg-white/5 border border-white/10 focus:border-primary outline-none px-6 py-5 rounded-2xl"
               />
 
               <textarea
@@ -213,13 +213,13 @@ export default function Contact() {
                   setMessage(e.target.value)
                 }
                 required
-                className="w-full bg-white/5 border border-white/10 focus:border-cyan-400 outline-none px-6 py-5 rounded-2xl resize-none"
+                className="w-full bg-white/5 border border-white/10 focus:border-primary outline-none px-6 py-5 rounded-2xl resize-none"
               ></textarea>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-to-r from-primary-light to-secondary hover:scale-[1.02] text-black py-5 rounded-2xl font-black text-lg transition duration-300"
+                className="w-full bg-gradient-to-r from-primary-light to-secondary hover:scale-[1.02] text-white py-5 rounded-2xl font-black text-lg transition duration-300"
               >
 
                 {

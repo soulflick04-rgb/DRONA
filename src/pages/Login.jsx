@@ -42,7 +42,7 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className="w-full bg-cyan-500 p-3 rounded-lg font-bold">
+        <button className="w-full bg-primary-dark p-3 rounded-lg font-bold">
           Login
         </button>
       </form>

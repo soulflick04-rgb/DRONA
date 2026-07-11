@@ -277,7 +277,7 @@ Now answer the user's question.
               
               ${
                 message.sender === "user"
-                  ? "bg-cyan-500 text-black self-end"
+                  ? "bg-primary-dark text-white self-end"
                   : "bg-white/5 border border-white/10 text-white"
               }`}
             >
@@ -324,7 +324,7 @@ Now answer the user's question.
     <button
       key={item}
       onClick={() => setInput(item)}
-      className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl hover:border-cyan-400"
+      className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl hover:border-primary"
     >
       {item}
     </button>
@@ -340,12 +340,12 @@ Now answer the user's question.
             placeholder="Ask Drona AI anything..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 md:px-6 py-4 outline-none focus:border-cyan-400 text-white w-full"
+            className="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 md:px-6 py-4 outline-none focus:border-primary text-white w-full"
           />
 
           <button
             onClick={handleSend}
-            className="w-full md:w-auto bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-2xl transition duration-300"
+            className="w-full md:w-auto bg-primary-dark hover:bg-primary text-white font-bold px-8 py-4 rounded-2xl transition duration-300"
           >
             Send
           </button>
