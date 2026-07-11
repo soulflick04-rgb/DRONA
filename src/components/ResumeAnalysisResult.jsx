@@ -3,14 +3,14 @@ export default function ResumeAnalysisResult({ analysis }) {
     <div className="space-y-8 mt-10">
 
       {/* HERO */}
-      <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 p-8 rounded-3xl border border-cyan-500/30">
+      <div className="bg-gradient-to-r from-primary/20 to-secondary/20 p-8 rounded-3xl border border-cyan-500/30">
 
         <h1 className="text-4xl font-black mb-4">
           📄 Resume Analysis Report
         </h1>
 
         <p className="text-gray-300">
-          Powered by WaveSights AI
+          Powered by Drona AI
         </p>
 
         <div className="grid md:grid-cols-3 gap-4 mt-6">
@@ -99,7 +99,7 @@ export default function ResumeAnalysisResult({ analysis }) {
     🎯 Role Match Analysis
   </h2>
 
-  <p className="text-cyan-300 text-xl font-bold">
+  <p className="text-primary-light text-xl font-bold">
     Match Score:
     {analysis.roleSpecificAnalysis?.roleMatch}%
   </p>
@@ -170,7 +170,7 @@ export default function ResumeAnalysisResult({ analysis }) {
 
 {/* PROJECTS TO BUILD */}
 
-<div className="bg-cyan-500/10 border border-cyan-500/20 p-6 rounded-3xl">
+<div className="bg-primary/10 border border-primary/20 p-6 rounded-3xl">
 
   <h2 className="text-3xl font-black mb-4">
     💻 Projects You Should Build
@@ -267,7 +267,7 @@ export default function ResumeAnalysisResult({ analysis }) {
                 {role.role}
               </h3>
 
-              <p className="text-cyan-300 mt-2">
+              <p className="text-primary-light mt-2">
                 {role.match}
               </p>
 
@@ -311,7 +311,7 @@ export default function ResumeAnalysisResult({ analysis }) {
 
       <div className="grid md:grid-cols-3 gap-4">
 
-        <div className="bg-cyan-500/10 p-5 rounded-3xl">
+        <div className="bg-primary/10 p-5 rounded-3xl">
 
           <h3 className="font-bold text-xl mb-3">
             📅 Next 30 Days
@@ -323,7 +323,7 @@ export default function ResumeAnalysisResult({ analysis }) {
 
         </div>
 
-        <div className="bg-blue-500/10 p-5 rounded-3xl">
+        <div className="bg-secondary/10 p-5 rounded-3xl">
 
           <h3 className="font-bold text-xl mb-3">
             📅 Next 90 Days

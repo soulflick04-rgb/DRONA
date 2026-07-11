@@ -51,7 +51,7 @@ export default function FloatingAI() {
 
                   content:
                     `
-You are WaveSights AI.
+You are Drona AI.
 
 Help users with:
 - Career guidance
@@ -116,7 +116,7 @@ Keep answers short and practical.
 
       {open && (
 
-        <div className="fixed bottom-6 right-6 w-[350px] max-w-[90vw] bg-[#020817] border border-cyan-400/20 rounded-3xl shadow-2xl z-50 overflow-hidden">
+        <div className="fixed bottom-6 right-6 w-[350px] max-w-[90vw] bg-background border border-primary/20 rounded-3xl shadow-2xl z-50 overflow-hidden">
          
          <button
   onClick={() => setOpen(false)}
@@ -129,7 +129,7 @@ Keep answers short and practical.
 
           <div className="bg-cyan-400 text-black font-black px-5 py-4 text-xl">
 
-            WaveSights AI 🚀
+            Drona AI 🚀
 
           </div>
 
@@ -177,7 +177,7 @@ Keep answers short and practical.
                 )
               }
 
-              placeholder="Ask WaveSights AI..."
+              placeholder="Ask Drona AI..."
 
               className="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 py-3 outline-none text-white"
             />

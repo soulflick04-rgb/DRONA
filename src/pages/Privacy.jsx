@@ -4,7 +4,7 @@ export default function Privacy() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-8 text-cyan-400">
+        <h1 className="text-5xl font-bold mb-8 text-primary-light">
           Privacy Policy
         </h1>
 
@@ -13,7 +13,7 @@ export default function Privacy() {
         </p>
 
         <p className="mb-6 text-gray-300">
-          At WaveSights, we value your privacy and are committed to protecting
+          At Drona, we value your privacy and are committed to protecting
           your personal information.
         </p>
 
@@ -42,7 +42,7 @@ export default function Privacy() {
         </h2>
 
         <p className="text-gray-300">
-          Email: wavesights.ai@gmail.com
+          Email: drona.ai@gmail.com
         </p>
       </div>
     </div>

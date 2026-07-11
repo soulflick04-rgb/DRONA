@@ -11,11 +11,11 @@ export default function ExploreCareer() {
     localStorage.getItem("previewUserType") || "Unknown";
 
   return (
-    <div className="min-h-screen bg-[#020817] text-white px-6 py-12">
+    <div className="min-h-screen bg-background text-white px-6 py-12">
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
-        <h1 className="text-5xl font-black text-cyan-400 mb-4">
+        <h1 className="text-5xl font-black text-primary-light mb-4">
           Explore Career Path
         </h1>
 
@@ -33,7 +33,7 @@ export default function ExploreCareer() {
             You are currently following:
           </p>
 
-          <p className="text-3xl font-bold text-cyan-400 mt-2">
+          <p className="text-3xl font-bold text-primary-light mt-2">
             {currentJourney}
           </p>
 
@@ -49,32 +49,32 @@ export default function ExploreCareer() {
             Exploring:
           </h2>
 
-          <h3 className="text-4xl font-black text-cyan-400 mb-6">
+          <h3 className="text-4xl font-black text-primary-light mb-6">
             {selectedJourney}
           </h3>
 
           <p className="text-gray-300 text-lg">
             Since your profile is currently configured for{" "}
-            <span className="font-bold text-cyan-400">
+            <span className="font-bold text-primary-light">
               {currentJourney}
             </span>
             , we cannot provide a fully personalized roadmap for{" "}
-            <span className="font-bold text-cyan-400">
+            <span className="font-bold text-primary-light">
               {selectedJourney}
             </span>
             .
           </p>
 
           <p className="text-gray-400 mt-4">
-            You can either ask WaveSights AI about this field or switch your
+            You can either ask Drona AI about this field or switch your
             journey to receive personalized recommendations.
           </p>
         </div>
 
         {/* AI Suggestions */}
-        <div className="bg-cyan-500/10 border border-cyan-400/20 rounded-3xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-cyan-400 mb-6">
-            🤖 Ask WaveSights AI
+        <div className="bg-primary/10 border border-primary/20 rounded-3xl p-8 mb-8">
+          <h2 className="text-3xl font-bold text-primary-light mb-6">
+            🤖 Ask Drona AI
           </h2>
 
           <div className="grid md:grid-cols-2 gap-4">
@@ -108,7 +108,7 @@ export default function ExploreCareer() {
   }}
   className="mt-8 bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-2xl font-bold transition duration-300"
 >
-  🤖 Open WaveSights AI →
+  🤖 Open Drona AI →
 </button>
         </div>
 

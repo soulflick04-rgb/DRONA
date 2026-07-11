@@ -73,7 +73,7 @@ export default function Leaderboard() {
     if (index === 2)
       return "from-orange-400 to-yellow-700";
 
-    return "from-cyan-400 to-blue-500";
+    return "from-primary-light to-secondary";
   };
 
   return (
@@ -84,7 +84,7 @@ export default function Leaderboard() {
 
       <div className="mb-12">
 
-        <h1 className="text-5xl md:text-7xl font-black text-cyan-400 mb-4">
+        <h1 className="text-5xl md:text-7xl font-black text-primary-light mb-4">
 
           🏆 Leaderboard
 
@@ -149,7 +149,7 @@ export default function Leaderboard() {
 
       <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
 
-        <h2 className="text-4xl font-black text-cyan-400 mb-8">
+        <h2 className="text-4xl font-black text-primary-light mb-8">
 
           🌍 Global Rankings
 
@@ -168,7 +168,7 @@ export default function Leaderboard() {
 
                 <div className="flex items-center gap-5">
 
-                  <div className="text-3xl font-black text-cyan-400">
+                  <div className="text-3xl font-black text-primary-light">
 
                     #{index + 1}
 
@@ -194,7 +194,7 @@ export default function Leaderboard() {
 
                 <div className="flex flex-wrap gap-4">
 
-                  <div className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-5 py-3 rounded-2xl font-bold">
+                  <div className="bg-gradient-to-r from-primary-light to-secondary text-black px-5 py-3 rounded-2xl font-bold">
 
                     ⚡ {user.xp} XP
 

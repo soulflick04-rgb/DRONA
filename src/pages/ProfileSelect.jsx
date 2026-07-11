@@ -36,15 +36,15 @@ export default function ProfileSelect() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#020817] text-white px-6 py-16">
+    <div className="min-h-screen bg-background text-white px-6 py-16">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-6xl font-black mb-6">
-            Choose Your <span className="text-cyan-400">Career Path</span>
+            Choose Your <span className="text-primary-light">Career Path</span>
           </h1>
 
           <p className="text-gray-400 text-xl max-w-3xl mx-auto">
-            WaveSights will personalize your dashboard and AI guidance according
+            Drona will personalize your dashboard and AI guidance according
             to your profile.
           </p>
         </div>

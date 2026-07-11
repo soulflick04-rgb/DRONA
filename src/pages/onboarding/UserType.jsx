@@ -31,7 +31,7 @@ export default function UserType() {
         </h1>
 
         <p className="text-gray-400 mb-10">
-          This helps WaveSights personalize your experience.
+          This helps Drona personalize your experience.
         </p>
 
         <div className="space-y-5">
@@ -45,8 +45,8 @@ export default function UserType() {
 
               ${
                 selected === type
-                  ? "border-cyan-400 bg-cyan-500/20 scale-105 shadow-lg shadow-cyan-500/20"
-                  : "border-white/10 bg-white/5 hover:border-cyan-400 hover:bg-cyan-500/10"
+                  ? "border-cyan-400 bg-primary/20 scale-105 shadow-lg shadow-primary/20"
+                  : "border-white/10 bg-white/5 hover:border-cyan-400 hover:bg-primary/10"
               }`}
             >
 

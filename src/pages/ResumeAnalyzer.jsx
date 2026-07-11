@@ -54,7 +54,7 @@ export default function ResumeAnalyzer() {
                 role: "system",
 
                 content: `
-You are WaveSights AI Resume Analyzer, an expert ATS Specialist, Recruiter, Career Coach, and Hiring Manager.
+You are Drona AI Resume Analyzer, an expert ATS Specialist, Recruiter, Career Coach, and Hiring Manager.
 You are a Senior Recruiter, ATS Expert, Hiring Manager, Career Coach, and Technical Interviewer.
 
 Your job is NOT to give generic advice.
@@ -383,7 +383,7 @@ A strong resume should receive 75-95 ATS.
 
   return (
     <div className="min-h-screen bg-[#020617] text-white p-6 md:p-10">
-      <h1 className="text-5xl md:text-7xl font-black text-cyan-400 mb-6">
+      <h1 className="text-5xl md:text-7xl font-black text-primary-light mb-6">
         AI Resume Analyzer 🚀
       </h1>
 
@@ -395,7 +395,7 @@ A strong resume should receive 75-95 ATS.
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-10">
 
-  <h2 className="text-2xl font-bold mb-4 text-cyan-300">
+  <h2 className="text-2xl font-bold mb-4 text-primary-light">
     🎯 Select Target Role
   </h2>
 
@@ -422,7 +422,7 @@ A strong resume should receive 75-95 ATS.
           ${
             selectedRole === role
               ? "bg-cyan-500 text-black border-cyan-400 scale-105"
-              : "bg-white/5 border-white/10 hover:border-cyan-400 hover:bg-cyan-500/10"
+              : "bg-white/5 border-white/10 hover:border-cyan-400 hover:bg-primary/10"
           }
         `}
       >
@@ -500,7 +500,7 @@ A strong resume should receive 75-95 ATS.
         <div className="mt-10">
           {/* Header */}
           <div className="mb-6">
-            <h2 className="text-4xl font-black text-cyan-400">
+            <h2 className="text-4xl font-black text-primary-light">
               Resume Analysis Report 🤖
             </h2>
             <p className="text-gray-400 mt-2">
@@ -509,7 +509,7 @@ A strong resume should receive 75-95 ATS.
           </div>
 
           {/* Main Report Card */}
-          <div className="bg-gradient-to-br from-white/5 to-cyan-500/5 border border-cyan-500/20 rounded-3xl p-8 shadow-2xl backdrop-blur-sm">
+          <div className="bg-gradient-to-br from-white/5 to-cyan-500/5 border border-primary/20 rounded-3xl p-8 shadow-2xl backdrop-blur-sm">
             {/* Decorative Top Bar */}
             <div className="h-1 w-32 bg-cyan-400 rounded-full mb-8"></div>
 
@@ -519,7 +519,7 @@ A strong resume should receive 75-95 ATS.
           prose-invert
           max-w-none
 
-          prose-headings:text-cyan-300
+          prose-headings:text-primary-light
           prose-headings:font-bold
 
           prose-h1:text-4xl
@@ -542,7 +542,7 @@ A strong resume should receive 75-95 ATS.
           prose-table:border
           prose-table:border-white/10
 
-          prose-th:text-cyan-300
+          prose-th:text-primary-light
           prose-th:border
           prose-th:border-white/10
 

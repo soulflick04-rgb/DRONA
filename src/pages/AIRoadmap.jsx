@@ -33,7 +33,7 @@ const streak =
   localStorage.getItem("streak") || 0;
 
       const prompt = `
-You are WaveSights AI, an elite Career Mentor, Recruiter, Industry Expert, and Learning Coach.
+You are Drona AI, an elite Career Mentor, Recruiter, Industry Expert, and Learning Coach.
 
 Your mission is to create a highly personalized career roadmap for the user.
 
@@ -273,8 +273,8 @@ try {
   };
 
   return (
-    <div className="min-h-screen bg-[#020817] text-white p-6 md:p-10">
-      <h1 className="text-4xl md:text-6xl font-black text-cyan-400 mb-6">
+    <div className="min-h-screen bg-background text-white p-6 md:p-10">
+      <h1 className="text-4xl md:text-6xl font-black text-primary-light mb-6">
         AI Career Roadmap 🚀
       </h1>
 
@@ -290,8 +290,8 @@ try {
       </button>
 
       {loading && (
-        <div className="mt-10 text-cyan-400 text-xl animate-pulse">
-          WaveSights AI is generating roadmap...
+        <div className="mt-10 text-primary-light text-xl animate-pulse">
+          Drona AI is generating roadmap...
         </div>
       )}
 

@@ -4,14 +4,14 @@ import ReactMarkdown from "react-markdown";
 
 export default function AIChat() {
   const [messages, setMessages] = useState(() => {
-    const savedMessages = localStorage.getItem("wavesights-chat");
+    const savedMessages = localStorage.getItem("drona-chat");
 
     return savedMessages
       ? JSON.parse(savedMessages)
       : [
           {
             sender: "ai",
-            text: "Hello 👋 I am WaveSights AI. Ask me anything about careers, skills, internships, or roadmap guidance.",
+            text: "Hello 👋 I am Drona AI. Ask me anything about careers, skills, internships, or roadmap guidance.",
           },
         ];
   });
@@ -27,7 +27,7 @@ const [input, setInput] = useState(
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem("wavesights-chat", JSON.stringify(messages));
+    localStorage.setItem("drona-chat", JSON.stringify(messages));
   }, [messages]);
 
   const handleSend = async () => {
@@ -69,7 +69,7 @@ const completedSkills =
         .join("\n");
 
       const prompt = `
-You are WaveSights AI, an elite AI Career Mentor.
+You are Drona AI, an elite AI Career Mentor.
 
 Your mission is to help users build successful careers through personalized guidance, learning plans, project ideas, interview preparation, internships, job search strategies, and motivation.
 
@@ -179,7 +179,7 @@ Now answer the user's question.
             {
               role: "system",
               content:
-                "You are WaveSights AI, a smart AI career mentor.",
+                "You are Drona AI, a smart AI career mentor.",
             },
             {
               role: "user",
@@ -211,7 +211,7 @@ Now answer the user's question.
       const errorMessage = {
         sender: "ai",
         text:
-          "⚠️ WaveSights AI is temporarily unavailable. Please try again.",
+          "⚠️ Drona AI is temporarily unavailable. Please try again.",
       };
 
       setMessages((prev) => [...prev, errorMessage]);
@@ -223,23 +223,23 @@ Now answer the user's question.
   };
 
   const clearChat = () => {
-    localStorage.removeItem("wavesights-chat");
+    localStorage.removeItem("drona-chat");
 
     setMessages([
       {
         sender: "ai",
-        text: "Hello 👋 I am WaveSights AI. Ask me anything about careers, skills, internships, or roadmap guidance.",
+        text: "Hello 👋 I am Drona AI. Ask me anything about careers, skills, internships, or roadmap guidance.",
       },
     ]);
   };
 
   return (
-    <div className="min-h-screen bg-[#020817] text-white flex flex-col">
+    <div className="min-h-screen bg-background text-white flex flex-col">
       {/* Header */}
       <div className="border-b border-white/10 px-4 md:px-6 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-black text-cyan-400">
-            WaveSights AI
+          <h1 className="text-3xl font-black text-primary-light">
+            Drona AI
           </h1>
 
           <p className="text-gray-400 text-sm mt-1">
@@ -248,7 +248,7 @@ Now answer the user's question.
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
-          <div className="bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-2xl text-sm">
+          <div className="bg-primary/20 text-primary-light px-4 py-2 rounded-2xl text-sm">
             AI Online
           </div>
 
@@ -293,11 +293,11 @@ Now answer the user's question.
 
     <div className="bg-white/5 border border-white/10 px-6 py-5 rounded-3xl flex items-center gap-2">
 
-      <span className="text-cyan-400 font-semibold">
-        WaveSights AI
+      <span className="text-primary-light font-semibold">
+        Drona AI
       </span>
 
-      <div className="flex gap-1 text-cyan-400 text-2xl">
+      <div className="flex gap-1 text-primary-light text-2xl">
 
         <span className="animate-bounce">•</span>
 
@@ -333,11 +333,11 @@ Now answer the user's question.
 </div>
 
       {/* Input */}
-      <div className="border-t border-white/10 p-4 md:p-6 sticky bottom-0 bg-[#020817]">
+      <div className="border-t border-white/10 p-4 md:p-6 sticky bottom-0 bg-background">
         <div className="flex flex-col md:flex-row gap-4">
           <input
             type="text"
-            placeholder="Ask WaveSights AI anything..."
+            placeholder="Ask Drona AI anything..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 md:px-6 py-4 outline-none focus:border-cyan-400 text-white w-full"

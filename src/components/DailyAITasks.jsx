@@ -58,7 +58,7 @@ export default function DailyAITasks() {
   localStorage.getItem("timeCommitment") || "";
 
    const prompt = `
-You are WaveSights AI, an elite career coach, hiring manager, productivity mentor, and industry expert.
+You are Drona AI, an elite career coach, hiring manager, productivity mentor, and industry expert.
 
 Your goal is to help the user make measurable career progress TODAY.
 
@@ -189,7 +189,7 @@ Generate the tasks now.
 
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
         <div>
-          <h2 className="text-3xl md:text-5xl font-black text-cyan-400">
+          <h2 className="text-3xl md:text-5xl font-black text-primary-light">
             🚀 Daily AI Tasks
           </h2>
 
@@ -199,7 +199,7 @@ Generate the tasks now.
         <div className="flex flex-col md:flex-row gap-4">
           {/* XP */}
 
-          <div className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-6 py-3 rounded-2xl font-black text-xl shadow-lg">
+          <div className="bg-gradient-to-r from-primary-light to-secondary text-black px-6 py-3 rounded-2xl font-black text-xl shadow-lg">
             ⚡ {xp} XP
           </div>
 
@@ -220,8 +220,8 @@ Generate the tasks now.
       {/* Loading */}
 
       {loading ? (
-        <div className="text-cyan-400 animate-pulse text-lg">
-          WaveSights AI is generating tasks...
+        <div className="text-primary-light animate-pulse text-lg">
+          Drona AI is generating tasks...
         </div>
       ) : (
         <div className="space-y-5">
@@ -244,7 +244,7 @@ Generate the tasks now.
                 className={`px-6 py-3 rounded-2xl font-bold transition-all ${
                   task.completed
                     ? "bg-green-500 text-white"
-                    : "bg-gradient-to-r from-cyan-400 to-blue-500 text-black hover:scale-105"
+                    : "bg-gradient-to-r from-primary-light to-secondary text-black hover:scale-105"
                 }`}
               >
                 {task.completed ? "✅ Completed" : `+${task.xp} XP`}

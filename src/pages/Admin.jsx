@@ -109,15 +109,15 @@ useEffect(() => {
 
   return (
 
-    <div className="min-h-screen bg-[#020817] text-white p-8">
+    <div className="min-h-screen bg-background text-white p-8">
 
       {/* Heading */}
 
       <div className="mb-12">
 
-        <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-semibold mb-6">
+        <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary-light text-sm font-semibold mb-6">
 
-          🚀 WaveSights Admin Panel
+          🚀 Drona Admin Panel
 
         </div>
 
@@ -125,7 +125,7 @@ useEffect(() => {
 
           Platform
 
-          <span className="block text-cyan-400">
+          <span className="block text-primary-light">
 
             Analytics
 
@@ -147,7 +147,7 @@ useEffect(() => {
 
           </h2>
 
-          <p className="text-5xl font-black text-cyan-400">
+          <p className="text-5xl font-black text-primary-light">
 
             {usersCount}
 
@@ -163,7 +163,7 @@ useEffect(() => {
 
           </h2>
 
-          <p className="text-5xl font-black text-cyan-400">
+          <p className="text-5xl font-black text-primary-light">
 
             {contacts.length}
 
@@ -179,7 +179,7 @@ useEffect(() => {
 
           </h2>
 
-          <p className="text-5xl font-black text-cyan-400">
+          <p className="text-5xl font-black text-primary-light">
 
             {subscribers.length}
 

@@ -3,14 +3,14 @@ export default function RoadmapResult({ roadmap }) {
     <div className="space-y-8 mt-10">
 
       {/* HERO SECTION */}
-      <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 p-8 rounded-3xl border border-cyan-500/30">
+      <div className="bg-gradient-to-r from-primary/20 to-secondary/20 p-8 rounded-3xl border border-cyan-500/30">
 
         <h1 className="text-4xl md:text-5xl font-black mb-4">
           🚀 Your Career Blueprint
         </h1>
 
         <p className="text-gray-300 text-lg">
-          Personalized by WaveSights AI
+          Personalized by Drona AI
         </p>
 
         <div className="grid md:grid-cols-3 gap-4 mt-6">
@@ -43,7 +43,7 @@ export default function RoadmapResult({ roadmap }) {
           <p>{roadmap.internshipReadiness}</p>
         </div>
 
-        <div className="bg-blue-500/10 border border-blue-500/20 p-5 rounded-2xl">
+        <div className="bg-secondary/10 border border-secondary/20 p-5 rounded-2xl">
           <h3 className="font-bold text-xl mb-2">
             💼 Job Readiness
           </h3>
@@ -145,16 +145,16 @@ export default function RoadmapResult({ roadmap }) {
 
             <div
               key={index}
-              className="bg-white/5 border border-cyan-500/20 rounded-3xl p-6"
+              className="bg-white/5 border border-primary/20 rounded-3xl p-6"
             >
 
               <div className="flex justify-between flex-wrap gap-2">
 
-                <h3 className="text-2xl font-bold text-cyan-400">
+                <h3 className="text-2xl font-bold text-primary-light">
                   🚀 {phase.title}
                 </h3>
 
-                <span className="bg-cyan-500/20 px-3 py-1 rounded-full text-sm">
+                <span className="bg-primary/20 px-3 py-1 rounded-full text-sm">
                   {phase.duration}
                 </span>
 
@@ -175,7 +175,7 @@ export default function RoadmapResult({ roadmap }) {
                   {phase.skills?.map((skill, i) => (
                     <span
                       key={i}
-                      className="bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-full text-sm"
+                      className="bg-primary/10 border border-primary/20 px-3 py-1 rounded-full text-sm"
                     >
                       {skill}
                     </span>
@@ -241,7 +241,7 @@ export default function RoadmapResult({ roadmap }) {
                 {project.title}
               </h3>
 
-              <p className="mt-2 text-cyan-300">
+              <p className="mt-2 text-primary-light">
                 {project.difficulty}
               </p>
 
@@ -271,7 +271,7 @@ export default function RoadmapResult({ roadmap }) {
             <p>{roadmap.salaryPotential?.internship}</p>
           </div>
 
-          <div className="bg-cyan-500/10 p-5 rounded-2xl">
+          <div className="bg-primary/10 p-5 rounded-2xl">
             <p className="font-bold">💼 Entry Level</p>
             <p>{roadmap.salaryPotential?.entryLevel}</p>
           </div>
@@ -303,7 +303,7 @@ export default function RoadmapResult({ roadmap }) {
       </div>
 
       {/* MOTIVATION */}
-      <div className="bg-cyan-500/10 border border-cyan-500/20 p-6 rounded-3xl">
+      <div className="bg-primary/10 border border-primary/20 p-6 rounded-3xl">
 
         <h2 className="text-3xl font-black mb-4">
           🌟 AI Motivation

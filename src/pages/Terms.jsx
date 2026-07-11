@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-8 text-cyan-400">
+        <h1 className="text-5xl font-bold mb-8 text-primary-light">
           Terms & Conditions
         </h1>
 
@@ -13,7 +13,7 @@ export default function Terms() {
         </p>
 
         <p className="text-gray-300 mb-6">
-          By using WaveSights, you agree to these Terms & Conditions.
+          By using Drona, you agree to these Terms & Conditions.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -21,7 +21,7 @@ export default function Terms() {
         </h2>
 
         <p className="text-gray-300">
-          WaveSights provides AI-powered career guidance, learning roadmaps,
+          Drona provides AI-powered career guidance, learning roadmaps,
           resume suggestions, and career recommendations.
         </p>
 

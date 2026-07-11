@@ -71,7 +71,7 @@ export default function Contact() {
 
   return (
 
-    <div className="min-h-screen bg-[#020817] text-white px-6 py-20">
+    <div className="min-h-screen bg-background text-white px-6 py-20">
 
       <div className="max-w-5xl mx-auto">
 
@@ -79,9 +79,9 @@ export default function Contact() {
 
         <div className="text-center mb-16">
 
-          <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-semibold mb-6">
+          <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary-light text-sm font-semibold mb-6">
 
-            🚀 Contact WaveSights
+            🚀 Contact Drona
 
           </div>
 
@@ -89,7 +89,7 @@ export default function Contact() {
 
             Let’s Build Your
 
-            <span className="block text-cyan-400">
+            <span className="block text-primary-light">
 
               Future Together
 
@@ -125,7 +125,7 @@ export default function Contact() {
 
               <p className="text-gray-400 text-lg">
 
-                wavesights.ai@gmail.com
+                drona.ai@gmail.com
 
               </p>
 
@@ -219,7 +219,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:scale-[1.02] text-black py-5 rounded-2xl font-black text-lg transition duration-300"
+                className="w-full bg-gradient-to-r from-primary-light to-secondary hover:scale-[1.02] text-black py-5 rounded-2xl font-black text-lg transition duration-300"
               >
 
                 {

@@ -92,7 +92,7 @@ setStreak(
 
       <div className="mb-12">
 
-        <h1 className="text-5xl md:text-7xl font-black text-cyan-400 mb-4">
+        <h1 className="text-5xl md:text-7xl font-black text-primary-light mb-4">
 
           👤 AI Career Profile
 
@@ -112,7 +112,7 @@ setStreak(
 
         {/* XP */}
 
-        <div className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black rounded-3xl p-8 shadow-lg">
+        <div className="bg-gradient-to-r from-primary-light to-secondary text-black rounded-3xl p-8 shadow-lg">
 
           <h2 className="text-5xl font-black">
 
@@ -188,7 +188,7 @@ setStreak(
 
       <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-10">
 
-        <h2 className="text-4xl font-black text-cyan-400 mb-6">
+        <h2 className="text-4xl font-black text-primary-light mb-6">
 
           📈 Career Progress
 
@@ -220,7 +220,7 @@ setStreak(
                   )}%`,
                 }}
 
-                className="h-full bg-gradient-to-r from-cyan-400 to-blue-500"
+                className="h-full bg-gradient-to-r from-primary-light to-secondary"
               />
 
             </div>
@@ -266,7 +266,7 @@ setStreak(
 
       <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
 
-        <h2 className="text-4xl font-black text-cyan-400 mb-6">
+        <h2 className="text-4xl font-black text-primary-light mb-6">
 
           🚀 AI Motivation
 

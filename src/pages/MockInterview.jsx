@@ -225,7 +225,7 @@ ${answer}
 
   return (
     <div className="min-h-screen bg-[#020617] text-white p-6 md:p-10">
-      <h1 className="text-5xl md:text-7xl font-black text-cyan-400 mb-6">
+      <h1 className="text-5xl md:text-7xl font-black text-primary-light mb-6">
         AI Mock Interview 🎤
       </h1>
 
@@ -239,14 +239,14 @@ ${answer}
         {/* ROLE SELECTION */}
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-8">
-          <h2 className="text-3xl font-black text-cyan-300 mb-6">
+          <h2 className="text-3xl font-black text-primary-light mb-6">
             🎯 Select Interview Role
           </h2>
 
           {/* TECH ROLES */}
 
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-cyan-400 mb-4">
+            <h3 className="text-xl font-bold text-primary-light mb-4">
               💻 Tech Careers
             </h3>
 
@@ -272,8 +272,8 @@ ${answer}
 
             ${
               role === item
-                ? "bg-cyan-400 text-black border-cyan-300 scale-105 shadow-lg shadow-cyan-500/30"
-                : "bg-white/5 border-white/10 hover:border-cyan-400 hover:bg-cyan-500/10"
+                ? "bg-cyan-400 text-black border-cyan-300 scale-105 shadow-lg shadow-primary/30"
+                : "bg-white/5 border-white/10 hover:border-cyan-400 hover:bg-primary/10"
             }
           `}
                 >
@@ -356,7 +356,7 @@ ${answer}
           </div>
         </div>
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-cyan-300 mb-4">
+          <h2 className="text-2xl font-bold text-primary-light mb-4">
             ⚡ Select Difficulty
           </h2>
 
@@ -382,7 +382,7 @@ ${answer}
           </div>
 
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-cyan-300 mb-4">
+            <h2 className="text-2xl font-bold text-primary-light mb-4">
               🧠 Interview Type
             </h2>
 
@@ -409,7 +409,7 @@ ${answer}
 
           <div className="mt-8">
 
-  <h2 className="text-2xl font-bold text-cyan-300 mb-4">
+  <h2 className="text-2xl font-bold text-primary-light mb-4">
     📋 Number of Questions
   </h2>
 
@@ -443,8 +443,8 @@ ${answer}
 
           {/* INTERVIEW PREVIEW */}
 
-          <div className="mt-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-3xl p-6">
-            <h3 className="text-xl font-bold text-cyan-300 mb-4">
+          <div className="mt-8 bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-3xl p-6">
+            <h3 className="text-xl font-bold text-primary-light mb-4">
               🚀 Interview Preview
             </h3>
 
@@ -470,7 +470,7 @@ ${answer}
           {/* FEATURES */}
 
           <div className="mt-6 bg-white/5 border border-white/10 rounded-3xl p-6">
-            <h3 className="text-xl font-bold text-cyan-300 mb-4">
+            <h3 className="text-xl font-bold text-primary-light mb-4">
               📋 What You'll Get
             </h3>
 
@@ -496,7 +496,7 @@ ${answer}
       <div className="mb-10">
         <button
           onClick={startInterview}
-          className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-cyan-500/40"
+          className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-primary/40"
         >
           {loading ? "Generating..." : "Start Interview"}
         </button>
@@ -514,12 +514,12 @@ ${answer}
               }}
             />
           </div>
-          <div className="mb-4 text-cyan-400 font-bold text-xl">
+          <div className="mb-4 text-primary-light font-bold text-xl">
             Question {questionNumber} / {totalQuestions}
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-8">
-            <h2 className="text-3xl font-black text-cyan-400 mb-4">
+            <h2 className="text-3xl font-black text-primary-light mb-4">
               Interview Question
             </h2>
 
@@ -539,8 +539,8 @@ ${answer}
             className="w-full bg-white/5 border border-white/10 rounded-3xl p-6 outline-none text-lg"
           />
 
-          <div className="mt-4 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
-            <h4 className="font-bold text-cyan-300">💡 Answer Tip</h4>
+          <div className="mt-4 bg-primary/10 border border-primary/20 rounded-2xl p-4">
+            <h4 className="font-bold text-primary-light">💡 Answer Tip</h4>
 
             <p className="text-gray-300 mt-2">
               Use STAR Method: Situation → Task → Action → Result
@@ -588,7 +588,7 @@ ${answer}
 
             <button
               onClick={analyzeAnswer}
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-cyan-500/40"
+              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-primary/40"
             >
               {loading ? "Analyzing..." : "Analyze Answer"}
             </button>

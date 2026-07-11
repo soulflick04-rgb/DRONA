@@ -81,11 +81,11 @@ export default function Dashboard() {
   let dashboardTitle = "";
 
   return (
-    <div className="min-h-screen bg-[#020817] text-white flex flex-col md:flex-row overflow-x-hidden">
+    <div className="min-h-screen bg-background text-white flex flex-col md:flex-row overflow-x-hidden">
       {/* Sidebar */}
 
       <aside
-        className={`fixed md:relative top-0 left-0 z-50 w-72 min-h-screen border-r border-white/10 bg-[#020817] p-6 flex-col transform transition-transform duration-300 ${
+        className={`fixed md:relative top-0 left-0 z-50 w-72 min-h-screen border-r border-white/10 bg-background p-6 flex-col transform transition-transform duration-300 ${
           mobileMenuOpen ? "translate-x-0 flex" : "-translate-x-full hidden"
         } md:flex md:translate-x-0`}
       >
@@ -100,8 +100,8 @@ export default function Dashboard() {
           <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
 
           <div>
-            <h1 className="text-4xl font-black bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              WaveSights
+            <h1 className="text-4xl font-black bg-gradient-to-r from-primary-light to-secondary bg-clip-text text-transparent">
+              Drona
             </h1>
 
             <p className="text-gray-400 text-sm">AI Career Platform</p>
@@ -109,7 +109,7 @@ export default function Dashboard() {
         </div>
 
         <div className="space-y-4">
-          <button className="w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold shadow-xl shadow-cyan-500/20">
+          <button className="w-full text-left px-5 py-4 rounded-2xl bg-gradient-to-r from-primary-light to-secondary text-black font-bold shadow-xl shadow-primary/20">
             Dashboard
           </button>
           <Link
@@ -156,11 +156,11 @@ export default function Dashboard() {
             onClick={() => (window.location.href = "/ai-chat")}
             className="w-full text-left px-5 py-4 rounded-2xl hover:bg-white/5 transition duration-300"
           >
-            WaveSights AI
+            Drona AI
           </button> */}
           <Link
             to="/"
-            className="block w-full text-center bg-cyan-500/10 border border-cyan-400/20 hover:bg-cyan-500 hover:text-black py-4 rounded-2xl font-bold transition duration-300"
+            className="block w-full text-center bg-primary/10 border border-primary/20 hover:bg-cyan-500 hover:text-black py-4 rounded-2xl font-bold transition duration-300"
           >
             🏠 Back to Home
           </Link>
@@ -178,8 +178,8 @@ export default function Dashboard() {
         </button>
       </aside>
       {/* Mobile Header */}
-      <div className="md:hidden flex items-center justify-between w-full p-5 border-b border-white/10 bg-[#020817]">
-        <h1 className="text-3xl font-black text-cyan-400">WaveSights</h1>
+      <div className="md:hidden flex items-center justify-between w-full p-5 border-b border-white/10 bg-background">
+        <h1 className="text-3xl font-black text-primary-light">Drona</h1>
 
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -194,7 +194,7 @@ export default function Dashboard() {
         {/* Top Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
           <div>
-            <h1 className="text-3xl md:text-5xl font-black mb-3 text-cyan-400 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-black mb-3 text-primary-light leading-tight">
               Welcome Future {interest} Expert 🚀
             </h1>
 
@@ -207,7 +207,7 @@ export default function Dashboard() {
             {/* User Card */}
 
             <div className="bg-white/5 border border-white/10 rounded-2xl px-5 py-4 flex items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-500 flex items-center justify-center text-2xl font-black text-white shadow-lg shadow-cyan-500/30 border border-white/10">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary-light via-secondary to-primary-dark flex items-center justify-center text-2xl font-black text-white shadow-lg shadow-primary/30 border border-white/10">
                 {localStorage.getItem("name")?.charAt(0)?.toUpperCase() || "U"}
               </div>
 
@@ -225,7 +225,7 @@ export default function Dashboard() {
             <div className="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl">
               <p className="text-gray-400 text-sm">Current Goal</p>
 
-              <h2 className="text-xl md:text-2xl font-bold text-cyan-400 break-words">
+              <h2 className="text-xl md:text-2xl font-bold text-primary-light break-words">
                 {careerGoal}
               </h2>
             </div>
@@ -234,8 +234,8 @@ export default function Dashboard() {
 
         {/* Continue Journey */}
 
-        <div className="mb-10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-400/20 rounded-3xl p-8">
-          <h2 className="text-3xl font-black text-cyan-400 mb-4">
+        <div className="mb-10 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-3xl p-8">
+          <h2 className="text-3xl font-black text-primary-light mb-4">
             🚀 Continue Your Journey
           </h2>
 
@@ -247,7 +247,7 @@ export default function Dashboard() {
 
             <div>
               <p className="text-gray-400">Progress</p>
-              <h3 className="text-xl font-bold text-cyan-400">
+              <h3 className="text-xl font-bold text-primary-light">
                 {selectedRoadmap.length > 0
                   ? Math.round(
                       (completedSteps.length / selectedRoadmap.length) * 100,
@@ -274,14 +274,14 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
               to="/resume-analyzer"
-              className="group bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-400/20 rounded-3xl p-6 hover:scale-105 transition-all"
+              className="group bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-3xl p-6 hover:scale-105 transition-all"
             >
               <div className="text-5xl mb-4">📄</div>
-              <span className="inline-block mb-3 px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold">
+              <span className="inline-block mb-3 px-3 py-1 rounded-full bg-primary/20 text-primary-light text-xs font-bold">
                 🔥 Most Popular
               </span>
 
-              <h3 className="text-xl font-bold text-cyan-400 mb-2">
+              <h3 className="text-xl font-bold text-primary-light mb-2">
                 Resume Analyzer
               </h3>
 
@@ -330,7 +330,7 @@ export default function Dashboard() {
               <div className="text-5xl mb-4">🤖</div>
 
               <h3 className="text-xl font-bold text-yellow-400 mb-2">
-                Wavesights AI
+                Drona AI
               </h3>
 
               <p className="text-gray-400 text-sm">
@@ -344,7 +344,7 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {/* Skills Learned */}
           <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-            <h2 className="text-4xl font-black text-cyan-400">
+            <h2 className="text-4xl font-black text-primary-light">
               {completedSteps.length}
             </h2>
 
@@ -353,7 +353,7 @@ export default function Dashboard() {
 
           {/* Progress */}
           <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-            <h2 className="text-4xl font-black text-cyan-400">
+            <h2 className="text-4xl font-black text-primary-light">
               {selectedRoadmap.length > 0
                 ? Math.min(
                     Math.round(
@@ -371,7 +371,7 @@ export default function Dashboard() {
           {/* Learning Streak */}
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-            <h2 className="text-4xl font-black text-cyan-400">
+            <h2 className="text-4xl font-black text-primary-light">
               🔥 {learningStreak}
             </h2>
 
@@ -400,7 +400,7 @@ export default function Dashboard() {
 
           {recommendations.length === 0 ? (
             <div className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-cyan-400 mb-3">
+              <h3 className="text-2xl font-bold text-primary-light mb-3">
                 🚀 No Recommendations Yet
               </h3>
 
@@ -421,19 +421,19 @@ export default function Dashboard() {
               {recommendations.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-400/20 rounded-3xl p-6 hover:shadow-cyan-500/20 hover:shadow-xl transition duration-300 hover:-translate-y-1"
+                  className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-3xl p-6 hover:shadow-primary/20 hover:shadow-xl transition duration-300 hover:-translate-y-1"
                 >
                   <div className="text-5xl mb-4">
                     {["🚀", "🔥", "💡", "🎯"][index % 4]}
                   </div>
 
-                  <h3 className="text-xl font-bold text-cyan-400 mb-2">
+                  <h3 className="text-xl font-bold text-primary-light mb-2">
                     {item.title}
                   </h3>
 
                   <p className="text-gray-300 mb-3">{item.description}</p>
 
-                  <span className="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 text-sm">
+                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary-light text-sm">
                     {item.priority}
                   </span>
                 </div>
@@ -444,14 +444,14 @@ export default function Dashboard() {
 
         {/* AI Motivation Section */}
 
-        <div className="mb-10 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-400/20 rounded-3xl p-6 md:p-8">
-          <h2 className="text-2xl md:text-4xl font-black text-cyan-400 mb-4">
+        <div className="mb-10 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-3xl p-6 md:p-8">
+          <h2 className="text-2xl md:text-4xl font-black text-primary-light mb-4">
             🔥 AI Progress Insight
           </h2>
 
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
             You completed{" "}
-            <span className="text-cyan-400 font-bold">
+            <span className="text-primary-light font-bold">
               {completedSteps.length}
             </span>{" "}
             roadmap steps.
@@ -467,9 +467,9 @@ export default function Dashboard() {
               🗺️ Personalized Career Roadmap
             </h2>
 
-            <div className="bg-gradient-to-br from-white/5 to-cyan-500/5 border border-cyan-400/20 rounded-3xl p-8">
+            <div className="bg-gradient-to-br from-white/5 to-cyan-500/5 border border-primary/20 rounded-3xl p-8">
               <div className="flex items-center justify-between mb-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-cyan-400">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary-light">
                   {interest} Roadmap 🚀
                 </h3>
               </div>
@@ -477,10 +477,10 @@ export default function Dashboard() {
                 {selectedRoadmap.map((step, index) => (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-3xl p-6 hover:border-cyan-400/30 hover:bg-cyan-500/5 transition duration-300"
+                    className="bg-white/5 border border-white/10 rounded-3xl p-6 hover:border-primary/30 hover:bg-cyan-500/5 transition duration-300"
                   >
                     <div className="flex items-start gap-5">
-                      <div className="w-14 h-14 rounded-full bg-cyan-500/20 flex items-center justify-center font-black text-cyan-400 text-lg">
+                      <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary-light text-lg">
                         {index + 1}
                       </div>
 
@@ -490,7 +490,7 @@ export default function Dashboard() {
                             {step.title}
                           </h3>
 
-                          <p className="text-cyan-400 text-sm mt-1">
+                          <p className="text-primary-light text-sm mt-1">
                             {step.phase} • {step.duration}
                           </p>
 
@@ -555,8 +555,8 @@ export default function Dashboard() {
             <>
               <Confetti />
 
-              <div className="mt-10 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/30 rounded-3xl p-5 md:p-10 text-center animate-pulse">
-                <h2 className="text-3xl md:text-6xl font-black text-cyan-400 mb-6">
+              <div className="mt-10 bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 rounded-3xl p-5 md:p-10 text-center animate-pulse">
+                <h2 className="text-3xl md:text-6xl font-black text-primary-light mb-6">
                   🎉 Congratulations 🎉
                 </h2>
 

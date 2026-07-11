@@ -61,7 +61,7 @@ export default function DashboardSidebar() {
 
         <div className="flex items-center gap-3 mb-12">
 
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-3xl shadow-lg shadow-cyan-500/30">
+          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-light to-secondary flex items-center justify-center text-3xl shadow-lg shadow-primary/30">
 
             🚀
 
@@ -69,9 +69,9 @@ export default function DashboardSidebar() {
 
           <div>
 
-            <h1 className="text-3xl font-black bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h1 className="text-3xl font-black bg-gradient-to-r from-primary-light to-secondary bg-clip-text text-transparent">
 
-              WaveSights
+              Drona
 
             </h1>
 
@@ -92,7 +92,7 @@ export default function DashboardSidebar() {
           <img
             src={localStorage.getItem("photo")}
             alt="profile"
-            className="w-14 h-14 rounded-full border border-cyan-400/20"
+            className="w-14 h-14 rounded-full border border-primary/20"
           />
 
           <div>
@@ -127,9 +127,9 @@ export default function DashboardSidebar() {
               ${
                 location.pathname === item.path
 
-                  ? "bg-cyan-500 text-black shadow-xl shadow-cyan-500/20"
+                  ? "bg-cyan-500 text-black shadow-xl shadow-primary/20"
 
-                  : "bg-white/5 border border-white/5 hover:border-cyan-400/20 hover:bg-cyan-500/10 text-white"
+                  : "bg-white/5 border border-white/5 hover:border-primary/20 hover:bg-primary/10 text-white"
               }`}
             >
 

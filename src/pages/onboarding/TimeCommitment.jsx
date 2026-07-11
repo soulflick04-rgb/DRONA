@@ -85,8 +85,8 @@ export default function TimeCommitment() {
 
               ${
                 selected === time
-                  ? "border-cyan-400 bg-cyan-500/20 scale-105 shadow-lg shadow-cyan-500/20"
-                  : "border-white/10 bg-white/5 hover:border-cyan-400 hover:bg-cyan-500/10"
+                  ? "border-cyan-400 bg-primary/20 scale-105 shadow-lg shadow-primary/20"
+                  : "border-white/10 bg-white/5 hover:border-cyan-400 hover:bg-primary/10"
               }`}
             >
               <h2 className="text-2xl font-semibold">{time}</h2>

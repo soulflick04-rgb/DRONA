@@ -1,15 +1,52 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #8b5cf6;
+  --color-primary-dark: #7c3aed;
+  --color-primary-light: #a78bfa;
+  --color-secondary: #c084fc;
+  --color-background: #090514;
+  --color-surface: #1e152f;
+  --color-surface-soft: #2a1f3e;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-accent: #38bdf8;
+  
+  --font-sans: 'Inter', 'Outfit', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  
+  .glow-primary:hover {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+  }
+  
+  .glass-card {
+    background: rgba(30, 21, 47, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+  }
+}
+
 @keyframes loading {
-
-  0% {
-    width: 0%;
-  }
-
-  50% {
-    width: 70%;
-  }
-
-  100% {
-    width: 100%;
-  }
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
 }

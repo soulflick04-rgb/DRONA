@@ -4,7 +4,7 @@ export default function Support() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-8 text-cyan-400">
+        <h1 className="text-5xl font-bold mb-8 text-primary-light">
           Support Center
         </h1>
 
@@ -18,7 +18,7 @@ export default function Support() {
           </h2>
 
           <p className="text-gray-300">
-            Email: wavesights.ai@gmail.com
+            Email: drona.ai@gmail.com
           </p>
 
           <p className="text-gray-300 mt-2">

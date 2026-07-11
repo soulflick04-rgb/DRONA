@@ -173,22 +173,22 @@ export default function Auth() {
   };
 
   return (
-    <div className="min-h-screen bg-[#020817] text-white flex items-center justify-center px-6 py-6 relative overflow-hidden">
+    <div className="min-h-screen bg-background text-white flex items-center justify-center px-6 py-6 relative overflow-hidden">
       {/* Glow */}
 
-      <div className="absolute w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[150px]"></div>
+      <div className="absolute w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"></div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl w-full relative z-10">
         {/* LEFT */}
 
         <div className="hidden lg:flex flex-col justify-center">
-          <div className="inline-flex items-center gap-3 bg-cyan-500/10 border border-cyan-400/20 px-5 py-3 rounded-full text-cyan-300 text-sm font-semibold mb-8 w-fit">
+          <div className="inline-flex items-center gap-3 bg-primary/10 border border-primary/20 px-5 py-3 rounded-full text-primary-light text-sm font-semibold mb-8 w-fit">
             AI Powered Career Platform
           </div>
           <div className="flex items-center gap-5 mb-6">
             <img src={logo} alt="logo" className="w-20 h-20 object-contain" />
 
-            <h1 className="text-5xl font-black leading-tight">WaveSights</h1>
+            <h1 className="text-5xl font-black leading-tight">Drona</h1>
           </div>
 
           <p className="mt-8 text-gray-400 text-xl leading-relaxed">
@@ -198,13 +198,13 @@ export default function Auth() {
 
           <div className="mt-12 grid grid-cols-2 gap-6">
             <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-              <h3 className="text-4xl font-black text-cyan-400">10K+</h3>
+              <h3 className="text-4xl font-black text-primary-light">10K+</h3>
 
               <p className="text-gray-400 mt-2">Students</p>
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-              <h3 className="text-4xl font-black text-cyan-400">AI</h3>
+              <h3 className="text-4xl font-black text-primary-light">AI</h3>
 
               <p className="text-gray-400 mt-2">Career Guidance</p>
             </div>
@@ -279,7 +279,7 @@ export default function Auth() {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-cyan-400"
+                className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary-light"
               >
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </button>
@@ -290,7 +290,7 @@ export default function Auth() {
                 <button
                   type="button"
                   onClick={handleForgotPassword}
-                  className="text-cyan-400 hover:text-cyan-300 text-sm"
+                  className="text-primary-light hover:text-primary-light text-sm"
                 >
                   Forgot Password?
                 </button>
@@ -301,7 +301,7 @@ export default function Auth() {
 
             <button
               onClick={isLogin ? login : signup}
-              className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:scale-[1.02] text-black py-5 rounded-2xl font-black text-lg transition duration-300"
+              className="w-full bg-gradient-to-r from-primary-light to-secondary hover:scale-[1.02] text-black py-5 rounded-2xl font-black text-lg transition duration-300"
             >
               {loading
                 ? "Please wait..."
